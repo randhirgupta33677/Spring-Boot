@@ -9,8 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 
-@RestController
-@RequestMapping("/api/employee")
+
 public class EmployeeController {
     /*
         Inject the service object here
