@@ -20,15 +20,16 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
          Define a method to get employee by sectorId and joining date, returning an Optional of employee
     */
     // findEmployeeBySectorIdAndEmployeeJoiningDate(String sectorId, LocalDate employeeJoiningDate);
-
+    Optional<Employee> findEmployeeBySectorIdAndEmployeeJoiningDate(String sectorId, LocalDate employeeJoiningDate);
     /*
         Define a method to get all employees by sector id, returning list of employees
     */
     // findEmployeesBySectorId(String sectorId);
-
+    List<Employee> findEmployeesBySectorId(String sectorId);
     /*
         Define a method to get all employees by branch id and joining date, returning list of employees
     */
 
     // findEmployeesByBranchIdAndEmployeeJoiningDate(String branchId, LocalDate employeeJoiningDate);
+    List<Employee> findEmployeesByBranchIdAndEmployeeJoiningDate(String branchId, LocalDate employeeJoiningDate);
 }
